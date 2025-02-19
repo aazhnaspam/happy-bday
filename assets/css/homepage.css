@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.star{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    background-image: url('/homepage/star.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: stars;
+    animation-duration:3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes stars{
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.star:nth-child(1){
+    left:5%;
+    animation-delay: 1s;
+}
+.star:nth-child(2){
+    left:15%;
+    top:20%;
+    animation-delay: 4s;
+}
+.star:nth-child(3){
+    left:5%;
+    top:75%;
+    animation-delay: 3s;
+}
+.star:nth-child(4){
+    left:35%;
+    animation-delay: 2s;
+}
+.star:nth-child(5){
+    left:50%;
+    top:80%
+}
+.star:nth-child(6){
+    left:50%;
+    top:13%;
+    animation-delay: 3s;
+}
+.star:nth-child(7){
+    left:55%;
+    top:75%;
+    animation-delay: 1s;
+}
+.star:nth-child(8){
+    left:65%;
+    animation-delay: 3s;
+}
+.star:nth-child(9){
+    left:75%;
+    top:25%;
+    animation-delay: 2s;
+}
+.star:nth-child(10){
+    left:80%;
+    top:80%;
+}
+.board-sign{
+    background-image: url('/homepage/signboard.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: main-box;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1 ;
+    position: absolute;
+    z-index: 1;
+}
+@keyframes main-box{
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*  */
+@media only screen and (max-height : 932px){
+    .board-sign{
+        height: 22rem;
+        width: 22rem;
+        top:20%;
+    }
+    .gift{
+        margin-left: 5rem;
+        top:70%
+    }
+    .gift-inner-container{
+        height: 24rem;
+        width: 24rem;
+        top:70%
+        
+    }
+    .pr-text{
+        margin-left: 20px;
+    }
+}
+@media only screen and (min-width : 766px) and (min-height : 1024px){
+    .board-sign{
+        height: 30rem;
+        width: 30rem;
+        top:20%;
+    }
+    .gift{
+        margin-left: 5rem;
+        top:70%
+    }
+    .gift-inner-container{
+        top:70%
+    }
+    .pr-text{
+        margin-left: 20px;
+    }
+}
+@media only screen and (min-width : 852px) and (min-height : 1279px){
+    .board-sign{
+        height: 38rem;
+        width: 38rem;
+        top:20%;
+    }
+    .gift{
+        top:70%
+    }
+    .gift-inner-container{
+        top:70%
+    }
+}
+
+
+.inner-board{
+    animation-name: innerBoard;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+}
+@keyframes innerBoard{
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.happy-text p{
+    display: inline-block;
+    animation: hpy 2s ease-in-out infinite ;
+}
+.happy-text p:nth-child(2){
+    animation-delay: 0.5s;
+}
+.happy-text p:nth-child(3){
+    animation-delay: 1s;
+}
+.happy-text p:nth-child(4){
+    animation-delay: 1.5s;
+}
+.happy-text p:nth-child(5){
+    animation-delay: 2s;
+}
+@keyframes hpy{
+    0%,100%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+}
+.bd-text p{
+    display: inline-block;
+    animation: bd 3.5s ease-in-out infinite;
+}
+.bd-text p:nth-child(2){
+    animation-delay: 0.5s;
+}
+.bd-text p:nth-child(3){
+    animation-delay: 1s;
+}
+.bd-text p:nth-child(4){
+    animation-delay: 1.5s;
+}
+.bd-text p:nth-child(5){
+    animation-delay: 2s;
+}
+.bd-text p:nth-child(6){
+    animation-delay: 2.5s;
+}
+.bd-text p:nth-child(7){
+    animation-delay: 3s;
+}
+.bd-text p:nth-child(8){
+    animation-delay: 3.5s;
+}
+@keyframes bd{
+    0%,100%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+}
+.gift-container{
+    background-color: rgb(235, 217, 79);
+position: absolute;
+height: 200vh;
+width: 100vw;
+z-index: 2;
+animation:  showDiv 7s forwards;
+}
+@keyframes showDiv {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    80% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    100% {
+      opacity: 1;
+      visibility: visible;
+    }
+}
+.gift{
+    background-image: url('/homepage/gift.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 10rem;
+    width: 10rem;
+    z-index: 3;
+    transition: all 0.3s ease;
+}
+.gift:hover{
+    height: 11rem;
+    width: 11rem;
+    cursor: pointer;
+}
+.pr-text{
+    display: inline-block;
+}
+

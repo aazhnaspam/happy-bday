@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fae0e4;
+    overflow-x:hidden;
+}
+
+.header{
+    display: flex;
+}
+.audio{
+    
+}
+.hbd-text{
+    background-image: url('/images/gifs/pink-hearts.gif');
+    background-position: center;
+    background-repeat: none;
+    background-size:cover;
+    margin: auto;
+    margin-top: 10px;
+}
+.happy, .nin{
+    margin: 0;
+    color: rgb(245, 219, 224);
+    font-size: 3rem;
+    font-family: serif;
+    font-weight: bold;
+    text-align: center;
+}
+.pink-heart{
+    height: 100%;
+    width: 100%;
+}
+.letter{
+    width: 65%;
+    /* margin: auto; */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.letter-img{
+    margin:0px;
+    padding: 10px;
+    height: 250px;
+    width: 255px;
+}
+.letter-img img{
+    height: 100%;
+    width: 100%;
+}
+.letter-text{
+    padding:20px;    
+    font-family: cursive;
+}
+.letter-text p{
+    margin: 10px 0px 10px;
+}
+
+.st-line{
+    width: 100%;
+    border: 1px solid palevioletred;
+}
+
+.letter-container{
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+}
+.gif{
+    width: 30%;
+    height: 300px;
+}
+
+#three{
+    margin-bottom: 50px;
+}
+
+
+.see-more{
+    cursor: pointer;
+    color: blue;
+}
+.see-more:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+/* @media only screen and (max-height:1400px) and (max-width:1030px){
+    .hbd-text{
+        height: fit-content;
+        font-size: 2%;
+    }
+    .gift{
+        width:100%;
+        height: 100%;
+    }
+    .gift-img{
+        height: 90%;
+        width: 80%;
+        border-radius: 10%;
+        margin: 20px;
+    }
+    .heart-button img{
+        height: 50px;
+        width: 50px;
+    }
+    .heart-button{
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+    .heart-button:hover{
+        height: 60px;
+        width: 60px;
+    }
+    .presents{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap:1rem;
+    }
+}
+@media only screen and (min-width:1023px)  {
+    .hbd-text{
+        margin-bottom: 1%;
+    }
+    .gift{
+        height: 90%;
+        width: 100%;
+    }
+    .gift-img{
+        height: 70%;
+        width: 90%;
+        border-radius: 9%;
+        margin: auto;
+    }
+    .presents{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+    }
+    .heart-button img{
+        height: 90px;
+        width: 90px;
+    }
+    .heart-button{
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+    .heart-button:hover{
+        height: 100px;
+        width: 100px;
+        
+} */
