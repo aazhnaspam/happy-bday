@@ -15,7 +15,7 @@ body{
     
 }
 .hbd-text{
-    background-image: url('./images/gifs/pink-hearts.gif');
+    background-image: url('../../images/gifs/pink-hearts.gif');
     background-position: center;
     background-repeat: none;
     background-size:cover;
