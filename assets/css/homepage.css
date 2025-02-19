@@ -71,7 +71,7 @@
     top:80%;
 }
 .board-sign{
-    background-image: url('../../homepage/signboard.png');
+    background-image: url('../homepage/signboard.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -240,7 +240,7 @@ animation:  showDiv 7s forwards;
     }
 }
 .gift{
-    background-image: url('./homepage/gift.png');
+    background-image: url('../../../homepage/gift.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
