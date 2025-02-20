@@ -7,5 +7,5 @@ gift.addEventListener("click",function() {
         // Unmute after a short delay to ensure autoplay works
         setTimeout(() => {
           audio.muted = false;
-        }, 500);
+        }, 1000);
       });
